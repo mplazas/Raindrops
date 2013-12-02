@@ -1,4 +1,10 @@
 Raindrops
 =========
 
-I was absent on November 27, 2013 (due to work I was doing at kickoff) when we committed changes to the README.md
+*Raindrops will fall down the screen in a set interval.
+
+*There will be a catcher at the bottom to catch the falling raindrops.
+
+*A score keeper will keep track of how many raindrops are caught.
+
+*If three raindrops are missed, the screen will turn black and read "game over" signaling the ends of the game.
