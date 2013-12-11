@@ -20,9 +20,9 @@ class rainGame {
   void run () {
 
     time.display();
-// the timer is displayed during the game
+    // the timer is displayed during the game
     text("Score:" + time.score, 100, 50);
-// the score is displayed during the game
+    // the score is displayed during the game
     for (int i = 0;i<index;i++) {
       snow[i].display();
       snow[i].move();
@@ -32,9 +32,12 @@ class rainGame {
       index++;
       oldTime=millis();
     }  
-//after every 1000 milliseconds (approximately) more raindrops will fall
+//    if (snow.y>=height && snow.y <=height*2) {
+//      background(0);
+//    }
+    //after every 1000 milliseconds (approximately) more raindrops will fall
     a.display();
-//the cathcer is displayed during the game
+    //the cathcer is displayed during the game
   }
 }
 
