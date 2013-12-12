@@ -18,15 +18,21 @@ class oly {
     fill(255);
     ellipse(x, y, d, d);
     stroke (0);
-//the raindrops themselves are being drawn
+    //the raindrops themselves are being drawn
   }
   void move () {
     y+= 3;
-// the raindrops are being moved down the screen three pixels each frame
+    // the raindrops are being moved down the screen three pixels each frame
+//    if (y >= height) {
+//      y = 0;
+//      x= int(random (1, width-1));
+//    }
   }
   void remove () {
-    y=2*height;
-//the raindrops are removed by offsetting their position to double the height of the screen, therefore they are not visible
+    y=-2*height;
+    y+=0;
+
+    //the raindrops are removed by offsetting their position to double the height of the screen, therefore they are not visible
   }
 }
 
