@@ -28,8 +28,11 @@ class catcher {
     // refer to "score_class" for more information about how the raindrop is removed 
     // if the raindrop is touching the catcher, then 1 point will be added to the score
     // refer to "timer_class" for more infromation on how the score is kept
+  }
+  void missDrop (oly drop, timer t) {
     if (drop.y>=height) {
-     t.score-=1;
+      t.score-=5;
+      drop.remove();
     }
   }
 }

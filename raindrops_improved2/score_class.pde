@@ -5,6 +5,7 @@ class rainGame {
   int index;
   int oldTime;
   int score;
+  endScreen gameOver;
 
   rainGame ( ) {
 
@@ -15,6 +16,7 @@ class rainGame {
     index = 0;
     oldTime=0;
     time = new timer();
+    gameOver = new endScreen();
   }
 
   void run () {
@@ -27,6 +29,7 @@ class rainGame {
       snow[i].display();
       snow[i].move();
       a.catchDrop(snow[i], time);
+      a.missDrop(snow[i], time);
     }
     if (millis()-oldTime >= 1000) {
       index++;
@@ -36,5 +39,8 @@ class rainGame {
     //after every 1000 milliseconds (approximately) more raindrops will fall
     a.display();
     //the cathcer is displayed during the game
+    if (time.score<0) {
+      gameOver.display();
+    }
   }
 }
