@@ -4,6 +4,7 @@ class oly {
   color c;
   int d;
   int ySpeed;
+  PImage snow;
 
   oly () {
     x = int (random(1, width-1));
@@ -11,6 +12,7 @@ class oly {
     c = color(random(255), random(255), random(255));
     d = 8;
     ySpeed=3;
+    snow = loadImage("snowflake.png") ;
   }
 
   void display() {
@@ -18,17 +20,18 @@ class oly {
     strokeWeight(1);
     stroke(c);
     fill(255);
-    ellipse(x, y, d, d);
+    image(snow, x, y,d,d);
+    //    ellipse(x, y, d, d);
     stroke (0);
     //the raindrops themselves are being drawn
   }
   void move () {
     y+= ySpeed;
     // the raindrops are being moved down the screen three pixels each frame
-//    if (y >= height) {
-//      y = 0;
-//      x= int(random (1, width-1));
-//    }
+    //    if (y >= height) {
+    //      y = 0;
+    //      x= int(random (1, width-1));
+    //    }
   }
   void remove () {
     y=-2*height;
