@@ -7,10 +7,10 @@ class oly {
   PImage snow;
 
   oly () {
-    x = int (random(1, width-1));
+    x = int (random(1, 1279));
     y = 0;
     c = color(random(255), random(255), random(255));
-    d = 8;
+    d = 15;
     ySpeed=3;
     snow = loadImage("snowflake.png") ;
   }

@@ -5,7 +5,7 @@ class catcher {
 
   catcher () {
     d = 50;
-    y = height-25;
+    y = 775;
   }
 
   void display() {
