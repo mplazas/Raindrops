@@ -10,7 +10,7 @@ class oly {
     x = int (random(1, 1279));
     y = 0;
     c = color(random(255), random(255), random(255));
-    d = 15;
+    d = 25;
     ySpeed=3;
     snow = loadImage("snowflake.png") ;
   }

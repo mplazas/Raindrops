@@ -9,7 +9,8 @@ class timer {
 
   void display() {
     fill(255);
-    text("Time:" + millis()/1000, width-150, 50);
-// the timer displays the time thats passes in seconds
+    text("Time:" + millis()/1000, width-150, 100);
+    // the timer displays the time thats passes in seconds
   }
 }
+

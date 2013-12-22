@@ -23,7 +23,7 @@ class rainGame {
 
     time.display();
     // the timer is displayed during the game
-    text("Score:" + time.score, 150, 50);
+    text("Score:" + time.score, 150, 100);
     // the score is displayed during the game
     for (int i = 0;i<index;i++) {
       snow[i].display();
