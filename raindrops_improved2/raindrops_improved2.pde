@@ -7,6 +7,7 @@ void setup () {
 
   g1 = new rainGame();
   m1 = new menu();
+  n1 = new instructions();
   gameStart= false;
   blizzard = loadImage("snow background.jpg");
   size (blizzard.width, blizzard.height);
@@ -28,8 +29,10 @@ void draw () {
 void mousePressed() {  
   if (dist((width/2)-250, 2*height/3, mouseX, mouseY) <= m1.w/2) {
     gameStart= true;
+  }
+  if (dist((width/2)+250, 2*height/3, mouseX, mouseY) <= m1.w/2) {
+    n1.display();
     // if the mouse is clicked within bounds of the start button, the game will start
     // refer to "score_class" for more information about the raindrop game
   }
-}
-
+  }
