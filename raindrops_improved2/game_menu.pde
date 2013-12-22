@@ -9,9 +9,9 @@ class menu {
   }
 
   void display () {
-    background (47, 124, 203);
+    background (204,226,229);
     fill (0);
-    text ("Raindrop Frenzy", width/2, height/3);
+    text ("Blizzard Blast", width/2, height/3);
     // the title of the game is displayed on the screen    
     fill(255);
     rectMode(CENTER);
