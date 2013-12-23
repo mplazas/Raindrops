@@ -13,4 +13,11 @@ Blizzard Blast
 
 *If your score reaches a negative number you lose the game.
 
+*the timer calculates the amount of seconds that have passed since the program was started not since the game was started
+
 --please press escape and restart the program in order to play--
+
+
+Glitches
+==========
+*it takes a long time at the beginning of the program to load everything
