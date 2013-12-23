@@ -25,7 +25,7 @@ class catcher {
       t.score+=1;
     }
     // if the raindrop is touching the catcher, then catcher will remove the raindrop off of the screen
-    // refer to "score_class" for more information about how the raindrop is removed 
+    // refer to "snowflake_class" for more information about how the raindrop is removed 
     // if the raindrop is touching the catcher, then 1 point will be added to the score
     // refer to "timer_class" for more infromation on how the score is kept
   }
