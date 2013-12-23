@@ -10,6 +10,7 @@ class endScreen {
     text("LOOKS LIKE YOU'RE STUCK!", width/2, height/5);
     imageMode(CENTER);
     image (lose, width/2, height/2);
+    // the end screen displays a short message and displays and image in the center
   }
 }
 

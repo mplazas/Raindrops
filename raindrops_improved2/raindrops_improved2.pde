@@ -37,9 +37,11 @@ void mousePressed() {
   if (dist((width/2)-250, 2*height/3, mouseX, mouseY) <= m1.w/2) {
     gameStart= true;
     // if the mouse is clicked within bounds of the start button, the game will start
-    // refer to "score_class" for more information about the raindrop game
+    // refer to "rainGame_class" for more information about the raindrop game
   }
   if (dist((width/2)+250, 2*height/3, mouseX, mouseY) <= m1.w/2) {
     inst=true;
+     // if the mouse is clicked within bounds of the instructions button, the instructions will be shown
+    // refer to "instructions" for more information about the raindrop game
   }
 }
