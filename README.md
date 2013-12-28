@@ -21,3 +21,4 @@ Blizzard Blast
 Glitches
 ==========
 *it takes a long time at the beginning of the program to load everything
+*if on the end screen you click within the bounds of where the instruction box used to be it will bring up the instructions
